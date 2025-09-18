@@ -1,4 +1,4 @@
-number = int(input("Enter the size of pattern: "))
+number = int(input("Enter the size of the pattern: "))
 
 row = 0 
 
