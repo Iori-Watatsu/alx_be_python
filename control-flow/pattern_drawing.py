@@ -4,7 +4,7 @@ row = 0
 
 while row < number:
     
-    for j in range(number):
+    for n in range(number):
         print("*", end="")
 
     print()
