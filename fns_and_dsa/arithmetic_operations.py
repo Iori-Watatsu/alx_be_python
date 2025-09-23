@@ -5,21 +5,16 @@ def perform_operation(num1, num2, operation):
     num2 = float(input("Enter the second number: "))
 
     operation = input("Enter the operation (add, subtract, multiply, divide): ")
-    match operation:
-        case "add":
-            result = num1 + num2
-            print("Result: ", result)
-        case "subtract":
-            result = num1 - num2
-            print("Result: ", result)
-        case "multiply":
-            result = num1 * num2
-            print("Result: ", result)
-        case "divide":
-            if num2 == 0:
-                print("Cannot divide by 0.")
-            else:
-                result = num1 / num2
-                print("Result: ", result)
-    return result
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multiply":
+        return num1 * num2
+    elif operation == "divide":
+        if num2 == 0:
+            return "Error: Cannot divide by zero."
+        return num1 / num2
+    else:
+        return "Error: Invalid operation."
 perform_operation()
