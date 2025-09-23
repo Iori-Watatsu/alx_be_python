@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 def display_current_datetime():
     
     now = datetime.now()
-    current_date = now.strftime('%y/%m/%d %H:%M:%S')
+    current_date = now.strftime('%Y/%m/%d %H:%M:%S')
     
     print(current_date)
 display_current_datetime()
@@ -15,7 +15,7 @@ def calculate_future_date():
     days = timedelta(days=prompt)
     future_date = now + days
 
-    print(future_date.strftime('%y/%m/%d'))
+    print(future_date.strftime('%Y/%m/%d'))
 calculate_future_date() 
     
 
