@@ -1,4 +1,4 @@
-def perform_operation(num1=float, num2=float, operation=str):
+def perform_operation(num1, num2, operation):
     print("Arithmetic Operations")
 
     num1 = float(input("Enter the first number: "))
@@ -22,4 +22,4 @@ def perform_operation(num1=float, num2=float, operation=str):
                 result = num1 / num2
                 print("Result: ", result)
     return result
-perform_operation(num1=float, num2=float, operation=str)
+perform_operation()
